@@ -1,0 +1,164 @@
+{
+ "metrics": {
+  "Baseline (TF-IDF on all text)": {
+   "genre_jaccard": 0.3639,
+   "same_director": 0.1325,
+   "coverage": 0.9929,
+   "mean_rating": 6.171
+  },
+  "Text only (overview+tagline)": {
+   "genre_jaccard": 0.2802,
+   "same_director": 0.0102,
+   "coverage": 0.9985,
+   "mean_rating": 6.065
+  },
+  "Metadata only": {
+   "genre_jaccard": 0.5228,
+   "same_director": 0.2454,
+   "coverage": 0.9825,
+   "mean_rating": 5.514
+  },
+  "Hybrid": {
+   "genre_jaccard": 0.5235,
+   "same_director": 0.2353,
+   "coverage": 0.9877,
+   "mean_rating": 5.584
+  },
+  "Hybrid + quality re-rank": {
+   "genre_jaccard": 0.5209,
+   "same_director": 0.2362,
+   "coverage": 0.979,
+   "mean_rating": 5.823
+  }
+ },
+ "sweep": [
+  {
+   "alpha": 0,
+   "genre_jaccard": 0.5228,
+   "same_director": 0.2454,
+   "coverage": 0.9825,
+   "mean_rating": 5.514
+  },
+  {
+   "alpha": 0.2,
+   "genre_jaccard": 0.5235,
+   "same_director": 0.243,
+   "coverage": 0.9846,
+   "mean_rating": 5.532
+  },
+  {
+   "alpha": 0.4,
+   "genre_jaccard": 0.5235,
+   "same_director": 0.2353,
+   "coverage": 0.9877,
+   "mean_rating": 5.584
+  },
+  {
+   "alpha": 0.6,
+   "genre_jaccard": 0.4934,
+   "same_director": 0.1948,
+   "coverage": 0.9935,
+   "mean_rating": 5.761
+  },
+  {
+   "alpha": 0.8,
+   "genre_jaccard": 0.3792,
+   "same_director": 0.0528,
+   "coverage": 0.9977,
+   "mean_rating": 5.999
+  },
+  {
+   "alpha": 1,
+   "genre_jaccard": 0.2802,
+   "same_director": 0.0102,
+   "coverage": 0.9985,
+   "mean_rating": 6.065
+  }
+ ],
+ "eda": {
+  "genres": [
+   [
+    "Drama",
+    2297
+   ],
+   [
+    "Comedy",
+    1722
+   ],
+   [
+    "Thriller",
+    1274
+   ],
+   [
+    "Action",
+    1154
+   ],
+   [
+    "Romance",
+    894
+   ],
+   [
+    "Adventure",
+    790
+   ],
+   [
+    "Crime",
+    696
+   ],
+   [
+    "Science Fiction",
+    535
+   ],
+   [
+    "Horror",
+    519
+   ],
+   [
+    "Family",
+    513
+   ],
+   [
+    "Fantasy",
+    424
+   ],
+   [
+    "Mystery",
+    348
+   ]
+  ],
+  "decades": [
+   [
+    1950,
+    27
+   ],
+   [
+    1960,
+    71
+   ],
+   [
+    1970,
+    109
+   ],
+   [
+    1980,
+    278
+   ],
+   [
+    1990,
+    778
+   ],
+   [
+    2000,
+    2048
+   ],
+   [
+    2010,
+    1446
+   ]
+  ],
+  "n": 4803,
+  "n_kw": 9813,
+  "n_people": 9390
+ },
+ "alpha": 0.4
+}
